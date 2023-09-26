@@ -1,5 +1,6 @@
 # ReadingListofJ
 
+Currently, each item is structured as Title + Summary + Citation. 
 
 ## CSP | Learning to compose soft prompts for compositional zero-shot learning
 

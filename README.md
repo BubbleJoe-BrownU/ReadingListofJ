@@ -3,6 +3,9 @@
 Currently, each item is structured as Title + Summary + Citation. 
 # Deep Learning Algorithm papers
 
+## DecSum| Decision-Focused Summarization
+The quality of the summarization is often measured on textual information alone, without consideration of whether the summarized text keeps critical information to make important decisions like diagnosing cancer or investment decisions. This paper proposed a new decision-focused summarization problem.
+
 ## CSP | Learning to compose soft prompts for compositional zero-shot learning
 
 ### Summary

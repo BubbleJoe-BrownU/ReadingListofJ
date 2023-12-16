@@ -53,6 +53,26 @@ Created the Attribution, Relation and Order (ARO) benchmark, on which state-of-t
 }
 ```
 
+# Alignment of LLMs
+
+## Urial | Untuned LLMs with Restyled In-context ALignment
+
+### Summary
+The LIMA (Less Is More for Alignment) showed that the effect of alignment tuning (SFT + RLHF) is superficial. For alignment-tuned LLMs, the knowledge-intensive content in their output originates from pre-training. Alignment tuning results in the distribution shift of stylistic tokens, like Thank, Welcome, However, i.e., "alignment tuning simply teaches base LLMs to select a sub-distribution of data formats for interacting with users".
+
+The proposed tuning-free method, URIAL, which performs alignment only with three stylistic examples and a system prompt, matches or surpasses SFT and SFT+RLHF methods.
+### Citation
+```
+@misc{lin2023unlocking,
+      title={The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning}, 
+      author={Bill Yuchen Lin and Abhilasha Ravichander and Ximing Lu and Nouha Dziri and Melanie Sclar and Khyathi Chandu and Chandra Bhagavatula and Yejin Choi},
+      year={2023},
+      eprint={2312.01552},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
+
 # Deep Learning System papers
 
 ## Flexgen | High-throughput Generative Inference of Large Language Models with a Single GPU

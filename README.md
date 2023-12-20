@@ -95,3 +95,8 @@ Flexgen's model compression strategy mainly has two parts, one is to quantize mo
       primaryClass={cs.LG}
 }
 ```
+
+## SwitchTransformer | Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+
+### Summary
+MoE (Mixture of Experts) selects different parameters for different inputs, thus enlarging the model capacity while maintaining similar computation costs. 

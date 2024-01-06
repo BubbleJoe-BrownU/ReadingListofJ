@@ -100,3 +100,23 @@ Flexgen's model compression strategy mainly has two parts, one is to quantize mo
 
 ### Summary
 MoE (Mixture of Experts) selects different parameters for different inputs, thus enlarging the model capacity while maintaining similar computation costs. 
+
+
+## LLM Powered Autonomous Agents from Lil'log
+### Link
+```
+https://lilianweng.github.io/posts/2023-06-23-agent/
+```
+
+### Summary
+The core idea is to build agents with LLM as the core controller, "the brain", which reveals the potential of LLMs beyond generating well-written texts.
+
+##### Planning
+The planning task involves task decomposition and self-reflection. 
+
+For task decomposition, Chain of Thought (CoT) and Tree of Thoughts are popular techniques for breaking complex tasks down into intermediate steps and exploring multiple reasoning possibilities at each step. Task decomposition can be done (1) by prompting LLMs with generic prompts like `"Steps for XYZ"`, (2) by prompting LLMs with task-specific instructions like `"Do this math problem step by step"` for solving a complex math problem, or (3) with human inputs.
+
+Another line of research, e.g., LLM+P, involves external classical planners doing long-term planning. The Planning Domain Definition Language (PDDL) is utilized in these approaches as an intermediate interface to describe the planning problem. In this process, LLM (1) translates the problem into "Problem PDDL", then (2) requests a classical planner to generate a PDDL plan based on an existing "Domain PDDL", and finally (3) translates the PDDL plan back into natural language.
+
+Self-reflection is a vital aspect that allows autonomous agents to improve iteratively by refining past action decisions and correcting previous mistakes.
+

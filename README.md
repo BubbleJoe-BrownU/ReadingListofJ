@@ -3,6 +3,11 @@
 Currently, each item is structured as Title + Summary + Citation. 
 # Deep Learning Algorithm papers
 
+## Repeat After Me | Transformers are Better than State Space Models at Copying
+There is growing interest in "Generalized State Space Models" like Mamba and RNNs that typically use O(1) memory to predict each token. This paper provides a theoretical analysis of the string copying task and shows that a two-layer transformer can copy strings of exponential length while GSSMs are fundamentally limited by their fixed-sized latent state.
+
+This paper constructs the copy task as hash-based copying, where models first "hash" sequence of n tokens (n-grams), then at each iteration of the auto-regressive prediction, attend to the previous occurrence of the most recent n-gram, and output the succeeding token. If there's no repetitive n-grams in the input, theoretically hash-based copying should result in zero errors.
+
 ## DecSum| Decision-Focused Summarization
 The quality of the summarization is often measured on textual information alone, without consideration of whether the summarized text keeps critical information to make important decisions like diagnosing cancer or investment decisions. This paper proposed a new decision-focused summarization problem.
 
